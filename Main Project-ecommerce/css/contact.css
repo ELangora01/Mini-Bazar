@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: aliceblue;
+}
+nav{
+    background-color: black;
+    padding: 10px 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+#logoWord{
+    color: blue;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu button{
+    all: unset;
+    color: white;
+    font-size: 20px;
+}
+#menu_Button{
+    display: none;
+}  
+#menu_Button img{
+    width: 3em;
+    height: 3em;
+}  
+
+
+main{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+main p{
+    font-size: 1.1em;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+dd{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+dt{
+    font-size: 1.1em;
+}
+main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 1em 0;
+
+}
+.name{
+    color: blue;
+}
+
+input{
+    width: 20em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+textarea{
+    width: 22em;
+    height: 5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form button{
+    all: unset;
+    width: 10em;
+    height: 2.5em;
+    background-color: skyblue;
+    text-align: center;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:700px){
+    .menu{
+        display: none;
+    }
+    #menu_Button{
+        display: block;
+    } 
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    main p{
+        font-size: 1em;
+    }
+    dd{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    dt{
+        font-size: 1em;
+    }
+
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

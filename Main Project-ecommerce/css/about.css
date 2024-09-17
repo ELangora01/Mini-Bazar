@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    /* background: linear-gradient(to left,#0061A8,#00051F); */
+    background-color: #00051F;
+    color: white;
+}
+nav{
+    background-color: black;
+    padding: 10px 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+#logoWord{
+    color: blue;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu button{
+    all: unset;
+    color: white;
+    font-size: 20px;
+}
+#menu_Button{
+    display: none;
+}  
+#menu_Button img{
+    width: 3em;
+    height: 3em;
+} 
+.main{
+    max-width: 100vw;
+    height: 100vh;
+    background: url("../assets/About_BG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2em;
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.who,.story{
+    width: 57vw;
+}
+.who p,.story p{
+    font-size: 20px;
+}
+.who h2,.story h2{
+    font-size: 35px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.who,.story,.vision{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.vision{
+    margin-top: 3em;
+    padding: 5%;
+}
+.vision h2{
+    text-align: center;
+    font-size: 35px;
+}
+dd{
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+dt{
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1em 0;
+
+}
+.name{
+    color: blue;
+}
+.invite{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.invite h2{
+    text-align: center;
+    font-size: 35px;
+
+}
+.invite p{
+    font-size: 1.2em;
+}
+@media(max-width:700px){
+    .menu{
+        display: none;
+    }
+    #menu_Button{
+        display: block;
+    } 
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .who,.story{
+        width: 90vw;
+    }
+    .who p,.story p{
+        font-size: 18px;
+    }
+    .who h2,.story h2{
+        font-size: 25px;
+    }
+    .vision h2{
+        font-size: 25px;
+    }
+    dd{
+
+        font-size: 1.1em;
+    }
+    dt{
+        font-size: 1em;
+    }
+    .invite h2{
+        font-size: 25px;    
+    }
+    .invite p{
+        font-size: 1em;
+    }
+    footer{
+        font-size: 14px;
+    }
+}
+@media(max-width:400px){
+    .who p,.story p{
+        font-size: 16px;
+    }
+    .who h2,.story h2{
+        font-size: 22px;
+    }
+
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

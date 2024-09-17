@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bazaar</title>
+    <link rel="shortcut icon" href="./assets/online-shopping.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="login" class="show">
+        <form>
+            <h1>Login</h1>
+            <div class="mail">
+                <label for="login-email">Enter Your Email</label>
+            <input type="email" name="login-email" id="login-email">
+            </div>
+            <div class="pass">
+                <label for="login-password">Enter You Password</label>
+            <input type="password" name="login-password" id="login-password">
+            </div>
+            <button id="login-btn" type="button">Login</button>
+            <button id="switch-to-signUp" type="button">Create an Account</button>
+            <div class="login-comment">
+                <p></p>
+            </div>
+        </form>
+    </div>
+    <div id="signUp" class="hide">
+        <form>
+            <h1>Sign Up</h1>
+            <div class="mail">
+                <label for="signUp-email">Enter Your Email</label>
+                <input type="email" name="signUp-email" id="signUp-email">
+            </div>
+            <div class="pass">
+                <label for="signUp-password">Create Your Password</label>
+            <input type="password" name="signUp-password" id="signUp-password">
+            </div>
+            <button id="signUp-btn" type="button">sign Up</button>
+            <button id="switch-to-login" type="button">Already have an Account</button>
+            <div class="signUp-comment">
+                <p></p>
+            </div>
+        </form>
+    </div>
+    <div id="otp">
+        <h1>Verify</h1>
+        <p>Your code was sent to your email</p>
+        <div class="otpEnter">
+        <input type="number" name="otp-number" id="otp-number" maxlength="4" required step="0">
+        <button id="verify">Verify</button>
+        </div>
+        <div class="resend-section">
+            <p></p>
+        </div>
+        <button id="reSend">Resend</button>
+        <div class="otp-comment">
+            <p></p>
+        </div>
+        
+    </div>
+    <script src="./javascript/index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "IadzjhpqJ9m53Dy53",
+           });
+        })();
+     </script>
+</body>
+</html>

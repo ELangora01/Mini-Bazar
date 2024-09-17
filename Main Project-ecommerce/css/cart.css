@@ -1,0 +1,151 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+body{
+    background-color:aliceblue !important;
+    
+}
+
+nav{
+    position: sticky ;
+    top: 0 ;
+    z-index: 100;
+    width: 100vw;
+}
+li button{
+    all: unset;
+    color: white;
+    margin-top: .5em;
+}
+li button:hover{
+    color: white;
+}
+#sign-out{
+    all: unset;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+button{
+    all: unset;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color:skyblue;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+button:hover{
+    color: black;
+}
+
+button:active{
+    background-color: blue;
+}
+.main{
+    display: flex;
+    gap: 5%;
+    min-height: 100vh;
+}
+#cartLeft{
+    width: fit-content;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.cartDec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+.cartItem{
+    padding: 1em;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    gap: 2%;
+}
+.cartImg{
+    display: flex;
+    flex-direction: column;
+}
+.cartModelDiv{
+    display: flex;
+    gap: 1em;
+}
+.cartPriceDiv{
+    display: flex;
+    gap: 0.5em;
+}
+.cartPriceDiv h5{
+    color: green;
+}
+#cartRight{
+    background-color: white;
+    border-radius: 20px;
+    height: max-content;
+    padding: 3em;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 30vh;
+    gap: 1em;
+}
+.originalpriceDiv,.discountDiv,.cartRightFinalPriceDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.discountDiv,.cartRightFinalPriceDiv{
+    border-bottom: 1px dotted black;
+}
+#cartRight>h4{
+    border-bottom: 1px dotted black ;
+}
+#cartRight p{
+    font-weight: 600;
+}
+.show{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;   
+}
+.hide{
+    display: none;
+}
+.cartEmpty{
+    margin: 0 !important;
+    padding: 0 !important;   
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+}
+
+
+
+@media(max-width:1050px){
+    .main{
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+    }
+    #cartRight{
+        position: static;
+        width: max-content;
+    }
+    #cartLeft{
+        width: max-content;
+    }
+
+}
+@media(max-width:550px){
+    .cartItem{
+        flex-direction: column;
+    }
+}

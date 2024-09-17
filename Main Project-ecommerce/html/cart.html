@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Mini Bazaar</title>
+    <link rel="shortcut icon" href="../assets/online-shopping.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black px-5 py-3 d-flex justify-content-between w-100 position-fixed top-0 ">
+            <a href="./home.html" class="navbar-brand text-white">Mini <span class="text-primary">BAZAAR</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="./home.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="./allProducts.html" class="nav-link text-white">Products</a></li>
+                    <li class="nav-item"><a href="./cart.html" class="nav-link text-white">Cart: <span id="headCount"></span></a></li>
+                    <li class="nav-item"><button id="sign-out" class="btn btn-outline-light">Sign Out</button></li>
+                </ul>
+            </div>
+        </nav>
+        
+       </header>
+       <main>
+        <h1 class=" text-center">cart List</h1>
+        
+        <div class="main container my-2">
+            <div class="cartEmpty">
+                <img src="../assets/cartEmptyImage" alt="Empty cart Image" height="300px" width="300px">
+                <h5>Your Cart is empty <a href="./allProducts.html">Click Here</a> to shop </h5>
+                
+            </div>
+            <div id="cartLeft"></div>
+
+            <div id="cartRight"></div> 
+
+        </div>
+       </main>
+
+
+
+       <footer class=" bg-black text-white px-5 py-2 text-center">This site Belongs to <span class="text-primary">ELANGO</span> &copy;2024</footer>
+
+    <script src="../javascript/cart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

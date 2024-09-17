@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mini Bazaar</title>
+    <link rel="shortcut icon" href="../assets/online-shopping.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+            <div class="logo">
+                <a href="">Mini <span id="logoWord"> Bazar</span></a>
+            </div>
+            <div class="menuBtn">
+                <button id="menu_Button">
+                <div class="menuShow"><img src="../assets/bars-solid.svg" alt="Menu Button"></div> 
+                <div class="menuHide"><img  src="../assets/xmark-solid.svg" alt="Menu Hide Symbol"></div>
+                </button>
+            </div>
+        </div>
+
+            <div class="menu">
+                
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/contact.html">Contact</a>
+                    <a href="../html/cart.html">Cart</a>
+                  <button id="signOut">SignOut</button>
+            
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mainContent" id="contactInfo">
+            <h2>Contact Us</h2>
+            <p>We’re here to help! Whether you have questions about our products, need assistance with your order, or want to provide feedback, don’t hesitate to reach out. Our dedicated support team is available and ready to assist you.</p>
+
+        </section>
+        <section class="mainContent" id="contactSupport">
+            <h2>Customer Support</h2>
+            <ul>
+                <li>
+                    <dd>Email Us</dd>
+                    <dt>For any inquiries or support requests, please email us at <a href="mailto:miniibazaarshop@gmail.com">miniibazaarshop@gmail.com</a>. We strive to respond to all emails within 24 hours.</dt>
+
+                </li>
+                <li>
+                    <dd>Call Us</dd>
+                    <dt>Prefer to speak with someone directly? Give us a call at <a href="tel:0123456789">0123456789</a>. Our customer service representatives are available from 9 AM to 6 PM (IST), Monday through Friday.</dt>
+                </li>
+                <li>
+                    <dd>Business Inquiries</dd>
+                    <dt>For wholesale or partnership opportunities, please contact our business development team at <a href="mailto:miniibazaarshop@gmail.com">miniibazaarshop@gmail.com</a>.</dt>
+                </li>
+                
+            </ul>
+        </section>
+        <section class="mainContent" id="contactForm">
+            <h2>Contact Us</h2>
+            <p>Have a question or feedback? We'd love to hear from you! Fill out our contact form</p>
+            <form>
+
+                <div>
+                    <label for="name">Name :</label><br>
+                <input type="text" name="name" id="name" required><br>
+                </div>
+                <div>
+                    <label for="email">Email :</label><br>
+                <input type="email" name="email" id="email" required><br>
+                </div>
+                <div>
+                    <label for="suggestion">Message :</label><br>
+                <textarea name="suggestion" id="suggestion" placeholder="Write a Suggestion...."></textarea><br>
+                </div>
+                <div class="fieldIndicator"><p></p></div>
+                <button type="button" id="send" onclick="sendEmail()">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>This site Belongs to <span class="name">ELANGO</span> &copy;2024</footer>
+
+    <script src="../javascript/contact.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "IadzjhpqJ9m53Dy53",
+           });
+        })();
+     </script>
+</body>
+</html>

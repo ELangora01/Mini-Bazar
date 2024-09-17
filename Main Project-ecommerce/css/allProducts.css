@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:aliceblue !important;
+}
+nav{
+    z-index: 1000;
+}
+li button{
+    all: unset;
+    color: white;
+    margin-top: .5em;
+}
+li button:hover{
+    color: white;
+}
+
+#sign-out{
+    all: unset;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+ button{
+    all: unset;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color:skyblue;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+
+}
+button:hover{
+    color: black;
+}
+button:active{
+    background-color: blue;
+} 
+.container{
+    min-height: 100vh;
+    padding: 0 !important;
+    margin: 5% !important;
+    display: flex;
+    width: 100vw;  
+}
+#productsList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3em;
+    padding: 2em;
+    width: 65%;
+    
+}
+.product{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .product:hover{
+    transform: scale(1.01);
+    z-index: -1;
+} */
+.categoriesList{
+       
+    display: flex; 
+    flex-direction: column;
+    width: 15% !important;
+
+
+}
+.categoriesList input{
+    margin-right: 0.3em;
+}
+
+.menuBtn{
+    z-index: 1000;
+}
+#menu_Button{
+    all: unset;
+    display: none
+}  
+#menu_Button img{
+    width: 3em;
+    height: 3em;
+}
+
+
+
+@media(max-width:1000px){
+    #productsList{
+        grid-template-columns: repeat(2,1fr);
+        width: 60% !important;
+      
+    }
+}
+@media(max-width:900px){
+    .menuBtn{
+        margin: 2em;
+    }
+    .categoriesList{
+        position: absolute;
+        top: 9em;
+         z-index: 100;
+        background-color: black;
+        border: 15px;
+        padding: 0px 5%;
+        display: none;
+        width: 50% !important;
+        
+    }
+    .categoriesList label,.categoriesList h2{
+        color: white;
+    }
+    #menu_Button{
+        display: block;
+    }
+
+}
+@media(max-width:800px){
+    #productsList{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+@media(max-width:550px){
+      #productsList{
+
+        width: 8em;
+        z-index: -1;
+
+      }
+}
+
+ 
+
+.visible{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

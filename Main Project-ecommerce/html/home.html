@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bazaar</title>
+    <link rel="shortcut icon" href="../assets/online-shopping.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+            <div class="logo">
+                <a href="">Mini <span id="logoWord"> Bazar</span></a>
+            </div>
+            <div class="menuBtn">
+                <button id="menu_Button">
+                <div class="menuShow"><img src="../assets/bars-solid.svg" alt="Menu Button"></div> 
+                <div class="menuHide"><img  src="../assets/xmark-solid.svg" alt="Menu Hide Symbol"></div>
+                </button>
+            </div>
+        </div>
+
+            <div class="menu">
+                
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/contact.html">Contact</a>
+                    <a href="../html/cart.html">Cart</a>
+                  <button id="signOut">SignOut</button>
+            
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="bannerContent">
+                <h1>Welcome to Mini Bazaar</h1>
+                <p>Explore our wide range of products and find something you love. From unique finds to everyday
+                    essentials, we have it all</p>
+                <button id="explore">Explore All</button>
+            </div>
+        </section>
+        <section id="categoryItems" >
+            <button id="mens-shirts" onclick="navigateToCategory('mens-shirts')">
+                <img src="../assets/category images/Mens-shirts-image" alt="Mens Shirts Image">
+                <h5>Mens Shirts</h5>
+            </button>
+            <button id="WomensDress" onclick="navigateToCategory('womens-dresses')">
+                <img src="../assets/category images/Womens-Dress-image" alt="Women Dress Image">
+                <h5>Womens Dress</h5>
+            </button>
+            <button id="SkinCare" onclick="navigateToCategory('skin-care')">
+                <img src="../assets/category images/Skin-Care-images" alt="Skin care Image">
+                <h5>Skin Care</h5>
+            </button>
+            <button id="laptops" onclick="navigateToCategory('laptops')">
+                <img src="../assets/category images/Laptop-images" alt="Laptop Image">
+                <h5>Laptops</h5>
+            </button>
+            <button id="mobiles" onclick="navigateToCategory('smartphones')">
+                <img src="../assets/category images/SmartPhone-image" alt="Smart Phone Image">
+                <h5>Smart Phones</h5>
+            </button>
+            <button id="tablets" onclick="navigateToCategory('tablets')">
+                <img src="../assets/category images/Tablets-image" alt="Tablet Image">
+                <h5>Tablets</h5>
+            </button>
+            <button id="homeDecor" onclick="navigateToCategory('home-decoration')">
+                <img src="../assets/category images/Home-Decor-image" alt="Home Decor Image">
+                <h5>Home Decor</h5>
+            </button>
+            <button id="KitchenAccessories" onclick="navigateToCategory('kitchen-accessories')">
+                <img src="../assets/category images/Kitchen-accesories-image" alt="Kitchen Accessories Image">
+                <h5>Kitchen Accessories</h5>
+            </button>
+            <button id="Groceries" onclick="navigateToCategory('groceries')">
+                <img src="../assets/category images/Groceries-image" alt="Groceries Image">
+                <h5>Groceries</h5>
+            </button>
+        </section>
+    </main>
+    <footer class=" bg-black text-white  py-2 text-center">This site Belongs to <span class="text-primary">ELANGO</span> &copy;2024</footer>
+
+
+   
+    <script  src="../javascript/home.js"></script>
+
+
+</body>
+
+</html>
